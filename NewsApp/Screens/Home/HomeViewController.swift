@@ -169,7 +169,7 @@ class HomeViewContoller :UIViewController, UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsCell
         
-        var content = self.articles?[indexPath.item]
+        let content = self.articles?[indexPath.item]
         cell.imgView.downloadImage(from: (content?.imgUrl ?? ""))
         cell.lbltitle.text = content!.headline
         cell.lblDesc.text = content!.desc
@@ -179,25 +179,25 @@ class HomeViewContoller :UIViewController, UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = DetailNewsViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
-      
+        let webVC = UIStoryboard.init(name:"Main", bundle: nil).instantiateViewController(identifier: "web") as! WebViewController
+        webVC.url = self.articles?[indexPath.item].url ?? ""
+        webVC.modalPresentationStyle = .fullScreen
+        self.present(webVC,animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         fetchNews()
+         fetchNews2()
         
     }
     
     
     @IBAction func btnBBCTapped(_ sender: UIButton) {
-       fetchNews()
+       fetchNews2()
     }
     
     @IBAction func btnUSTapped(_ sender: UIButton) {
-        fetchNews2()
+        fetchNews()
     }
     @IBAction func btnGermanyTapped(_ sender: UIButton) {
         fetchNews3()
