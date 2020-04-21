@@ -113,6 +113,9 @@
                                 <state key="normal" title="Germany">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGermanyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUg-oY-oR4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67k-E5-xQ2">
                                 <rect key="frame" x="0.0" y="132" width="135" height="36"/>
@@ -123,6 +126,9 @@
                                 <state key="normal" title="BBC">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnBBCTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0b-Sq-rmC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZM-6s-GHx">
                                 <rect key="frame" x="140" y="132" width="135" height="36"/>
@@ -130,6 +136,9 @@
                                 <state key="normal" title="US">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnUSTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bho-ZI-ol7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
