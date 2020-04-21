@@ -6,12 +6,15 @@
 //  Copyright © 2020 Vanski Corp. All rights reserved.
 //
 
+
+//New API Key
+//6dedfb6ad006408e94c33c3427eab2ec
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
